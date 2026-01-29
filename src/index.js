@@ -1,0 +1,1 @@
+import React from 'react';\nimport { createRoot } from 'react-dom/client';\nimport { Provider } from 'react-redux';\nimport store from './store';\nimport App from './App';\nimport './styles.css';\n\nconst container = document.getElementById('root');\nconst root = createRoot(container);\nroot.render(\n  <Provider store={store}>\n    <App />\n  </Provider>\n);

@@ -1,0 +1,1 @@
+import { configureStore } from '@reduxjs/toolkit';\nimport tableReducer from './features/table/tableSlice';\n\nconst store = configureStore({\n  reducer: {\n    table: tableReducer,\n  },\n});\n\nexport default store;
